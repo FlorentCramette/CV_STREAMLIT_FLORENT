@@ -67,3 +67,13 @@ a.blue-button {
 a.blue-button:hover {
     background-color: #005a9c; /* Fond bleu plus foncé au survol */
 }
+
+/* Styles globaux pour l'application */
+.stApp {
+    font-size: 18px; /* Taille globale du texte */
+    font-family: 'Roboto', sans-serif; /* Police par défaut */
+    line-height: 1.6; /* Espacement entre les lignes */
+    color: #fff; /* Texte en blanc */
+    background-color: #000; /* Fond noir */
+    padding: 10px; /* Ajout d'un léger padding pour éviter les bords trop proches */
+}
