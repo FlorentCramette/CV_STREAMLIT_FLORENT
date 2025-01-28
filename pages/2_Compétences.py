@@ -1,35 +1,55 @@
 import streamlit as st
-import os
 
-# Configure la page (doit être la première commande)
-st.set_page_config(
-    page_title="Compétences",
-    page_icon="💡",
-)
+# Configuration de la page
+st.set_page_config(page_title="Mes Compétences", page_icon="💼")
 
 # Charger le CSS
 def load_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-load_css(os.path.join("assets", "style.css"))
+load_css("assets/style.css")
 
-# Contenu de la page
-st.markdown("<h1>Compétences</h1>", unsafe_allow_html=True)
+# Contenu principal
+st.markdown("<h1>Mes Compétences</h1>", unsafe_allow_html=True)
 
-# Liste des compétences
-st.markdown(
-    """
-    <div class="section">
-        <ul>
-            <li><strong>Analyse, exploitation et structuration des données :</strong> Compétence clé pour transformer des données brutes en insights exploitables.</li>
-            <li><strong>Présentation et diffusion des résultats :</strong> Communication claire et visuelle via des outils BI (Power BI, Tableau).</li>
-            <li><strong>Langages techniques :</strong> SQL, Python, DAX pour l’analyse avancée et l’automatisation.</li>
-            <li><strong>Maîtrise des outils :</strong> Power BI, Tableau, Excel (TOSA niveau avancé), VBA.</li>
-            <li><strong>Rigueur et précision :</strong> Focus sur les détails et la qualité des données.</li>
-            <li><strong>Prise d’initiatives :</strong> Force de proposition dans des contextes variés.</li>
-        </ul>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+# Organisation des compétences
+soft_skills = [
+    "Capacité d'adaptation",
+    "Leadership",
+    "Prise d'initiative",
+    "Force de proposition",
+    "Collaboration et travail en équipe",
+    "Rigueur et organisation",
+]
+
+hard_skills = [
+    "Analyse et structuration des données",
+    "SQL, Python (Pandas, NumPy, Scikit-learn)",
+    "Power BI, Tableau (visualisation des données)",
+    "DAX et Excel (TOSA niveau avancé, VBA)",
+    "Modélisation et machine learning",
+    "Nettoyage et transformation des données",
+]
+
+# Affichage en deux colonnes
+col1, col2 = st.columns([2, 3])
+
+with col1:
+    st.subheader("💡 Soft Skills")
+    st.markdown(
+        "<ul class='skills-list'>" +
+        "".join([f"<li>{skill}</li>" for skill in soft_skills]) +
+        "</ul>",
+        unsafe_allow_html=True,
+    )
+
+with col2:
+    st.subheader("🔧 Hard Skills")
+    st.markdown(
+        "<ul class='skills-list'>" +
+        "".join([f"<li>{skill}</li>" for skill in hard_skills]) +
+        "</ul>",
+        unsafe_allow_html=True,
+    )
+

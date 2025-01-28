@@ -77,3 +77,21 @@ a.blue-button:hover {
     background-color: #000; /* Fond noir */
     padding: 10px; /* Ajout d'un léger padding pour éviter les bords trop proches */
 }
+
+/* Espacement et alignement des colonnes */
+.stColumn {
+    padding: 10px;
+}
+
+/* Style pour les titres des colonnes */
+h2, h3 {
+    text-align: center;
+    color: #0078D4;
+}
+/* Styles pour les listes (Soft Skills et Hard Skills) */
+.stApp ul li {
+    font-size: 20px; /* Augmenter la taille du texte */
+    line-height: 1.8; /* Espacement entre les lignes */
+    color: #fff; /* Texte en blanc */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+}
