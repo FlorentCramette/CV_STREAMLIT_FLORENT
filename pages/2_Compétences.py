@@ -1,7 +1,9 @@
 import streamlit as st
 
 # Configuration de la page
-st.set_page_config(page_title="Mes Compétences", page_icon="💼")
+st.set_page_config(
+    page_title="Mes Compétences",
+    page_icon="💼")
 
 # Charger le CSS
 def load_css(file_name):

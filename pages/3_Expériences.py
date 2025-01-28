@@ -5,6 +5,7 @@ import os
 st.set_page_config(
     page_title="Expériences professionnelles",
     page_icon="📈",
+    layout="wide",
 )
 
 # Charger le CSS

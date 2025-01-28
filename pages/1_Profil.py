@@ -2,7 +2,10 @@ import streamlit as st
 import os
 
 # Configure la page
-st.set_page_config(page_title="À propos de moi", page_icon="👤")
+st.set_page_config(
+    page_title="À propos de moi",
+    layout="wide",
+    page_icon="👤")
 
 # Fonction pour charger le CSS
 def load_css(file_name):
