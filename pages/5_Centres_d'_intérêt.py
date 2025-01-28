@@ -16,9 +16,9 @@ st.markdown(
     """
     <div class="section">
         <ul>
-            <li>Cinéma, lecture, théâtre</li>
+            <li>Cinéma, lecture, théâtre et informatique</li>
             <li>Sports outdoors : kayak, VTT, randonnée pédestre et à ski</li>
-            <li>Volley-ball</li>
+            <li>Bricolage et construction</li>
             <li>Voyages</li>
         </ul>
     </div>

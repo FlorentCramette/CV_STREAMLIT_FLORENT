@@ -15,8 +15,9 @@ st.markdown("<h1>Mes Compétences</h1>", unsafe_allow_html=True)
 
 # Organisation des compétences
 soft_skills = [
+    "Curieux et autodidacte",
     "Capacité d'adaptation",
-    "Leadership",
+    "Leadership bienveillant",
     "Prise d'initiative",
     "Force de proposition",
     "Collaboration et travail en équipe",
@@ -25,11 +26,13 @@ soft_skills = [
 
 hard_skills = [
     "Analyse et structuration des données",
-    "SQL, Python (Pandas, NumPy, Scikit-learn)",
-    "Power BI, Tableau (visualisation des données)",
-    "DAX et Excel (TOSA niveau avancé, VBA)",
-    "Modélisation et machine learning",
     "Nettoyage et transformation des données",
+    "SQL, Python (Pandas, NumPy, Scikit-learn...)",
+    "Power BI, Tableau (visualisation des données)",
+    "Streamlit, Django (présentation web)"
+    "Excel, VBA (TOSA niveau avancé)",
+    "Modélisation et machine learning",
+    
 ]
 
 # Affichage en deux colonnes
