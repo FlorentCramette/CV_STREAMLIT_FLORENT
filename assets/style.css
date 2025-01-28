@@ -1,0 +1,69 @@
+/* Styles généraux pour l'application */
+.stApp {
+    font-size: 20px; /* Taille globale du texte */
+    font-family: 'Roboto', sans-serif; /* Police par défaut */
+    line-height: 1.6; /* Espacement entre les lignes */
+    color: #fff; /* Couleur du texte en blanc */
+}
+
+/* Titres H1 */
+.stApp h1 {
+    font-size: 2.5rem; /* Taille pour les titres principaux */
+    font-weight: 700; /* Texte en gras */
+    text-align: center; /* Centrer les titres */
+    color: #c56409; /* Couleur du texte en blanc */
+}
+
+/* Titres H3 */
+.stApp h3 {
+    font-size: 1.8rem; /* Taille pour les sous-titres */
+    font-weight: 500; /* Épaisseur moyenne */
+    text-align: center; /* Centrer les sous-titres */
+    color: #fff; /* Couleur du texte en blanc */
+    margin-top: 20px; /* Espacement au-dessus */
+    margin-bottom: 10px; /* Espacement en dessous */
+}
+
+/* Paragraphes */
+.stApp p {
+    font-size: 20px !important; /* Augmentez la taille des paragraphes à 20px */
+    line-height: 1.8; /* Ajustez l'espacement entre les lignes pour améliorer la lisibilité */
+    color: #fff; /* Conserve le texte en blanc */
+}
+
+/* Listes */
+.stApp ul li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+    color: #fff; /* Texte des listes en blanc */
+}
+
+/* Centrage global pour les éléments */
+.center {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement si nécessaire */
+    text-align: center;
+}
+
+/* Centrer le contenu */
+.center {
+    text-align: center;
+}
+
+/* Bouton bleu pour le téléchargement */
+a.blue-button {
+    display: inline-block; /* Affichage en ligne */
+    background-color: #0078D4; /* Fond bleu */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille du texte */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur interactif */
+    margin-top: 20px; /* Espace au-dessus du bouton */
+}
+
+a.blue-button:hover {
+    background-color: #005a9c; /* Fond bleu plus foncé au survol */
+}
