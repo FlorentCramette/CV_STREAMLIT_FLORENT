@@ -29,7 +29,7 @@ hard_skills = [
     "Nettoyage et transformation des données",
     "SQL, Python (Pandas, NumPy, Scikit-learn...)",
     "Power BI, Tableau (visualisation des données)",
-    "Streamlit, Django (présentation web)"
+    "Streamlit, Django (présentation web)",
     "Excel, VBA (TOSA niveau avancé)",
     "Modélisation et machine learning",
     
