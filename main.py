@@ -24,7 +24,7 @@ st.markdown(
     <div class="section center">
         <p>Explorez mon parcours professionnel, mes compétences, mes expériences, mes formations, 
         et mes centres d'intérêt à travers les différentes sections accessibles via le menu latéral.</p>
-        
+        <p>Admis en formation Data IA engineer, je suis à la recherche d'une entreprise pour signer un contrat de professionalisation. L'alternance se déroule sur 15 mois, à raaison de trois semains en entreprise et une semaine à l'école.<p>
     </div>
     """,
     unsafe_allow_html=True,

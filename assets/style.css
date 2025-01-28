@@ -33,7 +33,7 @@
 
 /* Listes */
 .stApp ul li {
-    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+    margin-bottom: 20px; /* Espacement entre les éléments de la liste */
     color: #fff; /* Texte des listes en blanc */
 }
 
