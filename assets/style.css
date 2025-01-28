@@ -74,7 +74,7 @@ a.blue-button:hover {
     font-family: 'Roboto', sans-serif; /* Police par défaut */
     line-height: 1.6; /* Espacement entre les lignes */
     color: #fff; /* Texte en blanc */
-    background-color: #000; /* Fond noir */
+    background-color: #1311115d; /* Fond noir */
     padding: 10px; /* Ajout d'un léger padding pour éviter les bords trop proches */
 }
 
