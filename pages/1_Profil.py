@@ -22,10 +22,11 @@ st.markdown(
     <div class="section">
         <p>
             <strong>Passionné par l’analyse de données,</strong> je transforme l’information brute en leviers stratégiques. 
-            Après une carrière en retail et management, j’ai choisi de me spécialiser en data pour allier vision métier et expertise technique.
+            Après une carrière dans le sport et le retail, j’ai choisi de me spécialiser en data pour allier vision métier et expertise technique.
             Compétent en BI (Power BI, Tableau, SQL) et Python, j’aime extraire des insights clés, automatiser des processus 
             et créer des modèles prédictifs. Curieux et orienté impact, je cherche un premier poste en Data Analyst ou une alternance en Data/IA Engineering.
-            Envie d’en savoir plus ? Échangeons ! 🚀
+        <p>    
+            <p>Envie d’en savoir plus ? Échangeons ! 🚀<p>
         </p>
         
     </div>
