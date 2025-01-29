@@ -25,7 +25,7 @@ st.markdown("- **Exploration et nettoyage des données** 🧹\n"
 ## **2️⃣ Chargement et exploration des données**
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/mnt/data/df_wine_filled.csv")
+    df = pd.read_csv("assets/df_wine_filled.csv")  # Mise à jour du chemin
     return df
 
 df = load_data()
