@@ -32,7 +32,7 @@ st.markdown(
             </li>
             <li>
                 <img src="https://avatars.githubusercontent.com/u/8874047" alt="Wild Code School Logo" style="width:50px; vertical-align:middle; margin-right:10px;">
-                <strong>Certification Data Analyst RNCP 6</strong> - Wild Code School Lyon (février - août 2024)
+                <strong>Certification Data Analyste RNCP 6</strong> - Wild Code School Lyon (février - août 2024)
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Claude_Bernard_University_Lyon_1_%28logo%29.svg/225px-Claude_Bernard_University_Lyon_1_%28logo%29.svg.png" alt="Université Claude Bernard Lyon 1 Logo" style="width:50px; vertical-align:middle; margin-right:10px;">
