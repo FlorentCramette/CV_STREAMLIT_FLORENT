@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
@@ -10,11 +11,19 @@ from sklearn.metrics import mean_absolute_error
 # Configuration de la page
 st.set_page_config(page_title="Projets - Analyse du Marché du Vin", layout="wide")
 
+# Fonction pour charger le CSS
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Charger le CSS
+load_css(os.path.join("assets", "style.css"))
+
 st.markdown(
     """
     <style>
         .block-container {
-            max-width: 800px;  /* Ajuste cette valeur pour réduire la largeur */
+            max-width: 1200px;  /* Ajuste cette valeur pour réduire la largeur */
             margin: auto;
         }
     </style>
@@ -72,9 +81,9 @@ df = df.dropna(subset=['price'])
 # Affichage de la heatmap des valeurs nulles
 with st.container():
     st.subheader("🗺️ Carte des Valeurs Manquantes")
-    fig, ax = plt.subplots(figsize=(2, 1.5))
+    fig, ax = plt.subplots(figsize=(5, 3))
     sns.heatmap(df.isnull(), cbar=False, cmap="viridis", yticklabels=False)
-    ax.set_title("Carte des Valeurs Manquantes")
+    ax.set_title("Carte des Valeurs Manquantes", fontsize=12)
     st.pyplot(fig)
 
 st.write("📌 Aperçu des données après nettoyage :")
@@ -83,17 +92,20 @@ st.write(df.head())
 ## **4️⃣ Visualisation des données**
 st.subheader("📊 Distribution des Prix du Vin")
 with st.container():
-    fig, ax = plt.subplots(figsize=(2, 1.5))
-    sns.histplot(df['price'], bins=30, kde=True, ax=ax)
-    ax.set_title("Répartition des prix des vins")
+    fig, ax = plt.subplots(figsize=(6, 3))
+    sns.histplot(df['price'], bins=50, kde=True, ax=ax)
+    ax.set_title("Répartition des prix des vins", fontsize=12)
+    ax.set_xlabel("Prix", fontsize=10)
+    ax.set_ylabel("Nombre", fontsize=10)
     st.pyplot(fig)
 
 # Affichage du boxplot pour détecter les outliers
 st.subheader("📌 Analyse des Prix et Outliers")
 with st.container():
-    fig, ax = plt.subplots(figsize=(2, 1.5))
+    fig, ax = plt.subplots(figsize=(6, 3))
     sns.boxplot(x=df['price'], ax=ax)
-    ax.set_title("Boxplot des Prix des Vins")
+    ax.set_title("Boxplot des Prix des Vins", fontsize=12)
+    ax.set_xlabel("Prix", fontsize=10)
     st.pyplot(fig)
 
 st.write("💡 Les prix du vin présentent une forte variabilité, mais les valeurs élevées ne doivent pas être considérées comme des outliers.")

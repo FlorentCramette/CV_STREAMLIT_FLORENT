@@ -31,9 +31,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Afficher une image
-st.image(os.path.join("assets", "board_nom.JPG"), caption="Florent Cramette", use_container_width=True)
-
 # Ajouter un bouton centré pour télécharger le programme de l'alternance
 with open(os.path.join("assets", "Programme_Data_IA_Engineer.pdf"), "rb") as file:
     st.markdown(
@@ -42,7 +39,13 @@ with open(os.path.join("assets", "Programme_Data_IA_Engineer.pdf"), "rb") as fil
             <a href="assets/Programme_Data_IA_Engineer.pdf" download="Programme_Data_IA_Engineer.pdf" class="blue-button">
                 📄 Télécharger le programme de l'alternance
             </a>
+            <p> <p>
         </div>
         """,
         unsafe_allow_html=True,
     )
+
+# Afficher une image
+st.image(os.path.join("assets", "board_nom.JPG"), caption="Florent Cramette", use_container_width=True)
+
+
