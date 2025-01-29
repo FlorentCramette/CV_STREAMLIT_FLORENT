@@ -1,0 +1,39 @@
+# Fichiers et dossiers Python à ignorer
+__pycache__/
+*.py[cod]
+*.so
+*.log
+*.sqlite3
+.DS_Store
+
+# Environnements virtuels
+venv/
+env/
+.venv/
+
+# Fichiers de configuration système
+*.swp
+*.swo
+*.bak
+
+# Fichiers Streamlit de cache
+.streamlit/
+
+# Dépendances installées via pip
+*.egg-info/
+pip-log.txt
+
+# Clés secrètes et variables d’environnement
+.env
+secrets.toml
+
+# Dossiers spécifiques à VSCode et Jupyter Notebook
+.vscode/
+.ipynb_checkpoints/
+
+# Fichiers temporaires ou générés
+*.tmp
+*.lock
+*.log
+*.out
+*.bak
