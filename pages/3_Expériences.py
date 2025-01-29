@@ -74,7 +74,7 @@ st.markdown(
 st.markdown(
     """
     <div class="section">
-        <h3>Responsable dee activités</h3>
+        <h3>Responsable des activités</h3>
         <p><strong>Entreprise :</strong> UCPA</p>
         <p><strong>Période :</strong> 1993 - Septembre 2005</p>
         <ul>
