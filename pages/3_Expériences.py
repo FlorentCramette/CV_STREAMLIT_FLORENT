@@ -52,3 +52,38 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+st.markdown(
+    """
+    <div class="section">
+        <h3>Responsable d'un parc accrobatique en hauteur'</h3>
+        <p><strong>Entreprise :</strong> France Aventures</p>
+        <p><strong>Période :</strong> Avril 2006 - Septembre 2007</p>
+        <ul>
+            <li>Management et formation des opérateurs du parc.</li>
+            <li>Gestion opérationnelle d'un centre de profit, avec suivi des objectifs.</li>
+            <li>Analyse des performances commerciales via Power BI et Excel.</li>
+            <li>Construction et maintenance du parc et suivi des registres de sécurité.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+st.markdown(
+    """
+    <div class="section">
+        <h3>Responsable dee activités</h3>
+        <p><strong>Entreprise :</strong> UCPA</p>
+        <p><strong>Période :</strong> 1993 - Septembre 2005</p>
+        <ul>
+            <li>Management des équipes de moniteurs.</li>
+            <li>Gestion opérationnelle du matériel et des sites de pratique, avec suivi des objectifs.</li>
+            <li>Elaboration des plannings d'activités interne et externe.</li>
+            <li>Création de nouveaux produits de randonnées itinérantes en kayak.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
