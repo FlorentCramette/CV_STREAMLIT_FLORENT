@@ -56,7 +56,7 @@ st.markdown(
 st.markdown(
     """
     <div class="section">
-        <h3>Responsable d'un parc accrobatique en hauteur'</h3>
+        <h3>Responsable d'un parc accrobatique en hauteur</h3>
         <p><strong>Entreprise :</strong> France Aventures</p>
         <p><strong>Période :</strong> Avril 2006 - Septembre 2007</p>
         <ul>

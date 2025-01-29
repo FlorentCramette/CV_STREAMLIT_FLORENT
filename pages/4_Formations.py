@@ -24,7 +24,7 @@ st.markdown(
         <ul>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" style="width:50px; vertical-align:middle; margin-right:10px;">
-                <strong>Career Certificate - Data Analyst</strong> (septembre - décembre 2024)
+                <strong>Career Certificate - Data Analyste</strong> (septembre - décembre 2024)
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" style="width:50px; vertical-align:middle; margin-right:10px;">
