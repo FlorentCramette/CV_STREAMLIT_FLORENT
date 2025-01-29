@@ -22,11 +22,10 @@ st.markdown("<h1>Bienvenue sur mon CV interactif</h1>", unsafe_allow_html=True)
 st.markdown(
     """
     <div class="section center">
-        <p>Explorez mon parcours professionnel, mes compétences, mes expériences, mes formations, 
-        et mes centres d'intérêt à travers les différentes sections accessibles via le menu latéral.</p>
+        <p>A la recherche d'une première expérience en tant que Data Analyste, ou d'une alternance pour devenir Data IA Engineer, explorez mon parcours à travers les différentes sections accessibles via le menu latéral.</p>
         <p>Admis en formation Data IA engineer, je suis à la recherche d'une entreprise pour signer un contrat de professionalisation. 
         L'alternance débute en mars 2025 et se déroule sur 15 mois, à raison de trois semains en entreprise et une semaine à l'école.<p>
-        <p>Si vous souhaitez combiner l'énergie de la jeunesse et la sagesse du sénior: je suis là!<p>
+        <p>Si vous souhaitez combiner l'énergie de la jeunesse à la sagesse du sénior: je suis là!<p>
      </div>
     """,
     unsafe_allow_html=True,
