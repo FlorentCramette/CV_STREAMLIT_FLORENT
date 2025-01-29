@@ -1,2 +1,8 @@
 streamlit>=1.25.0          # Framework Streamlit pour l'application
 streamlit-extras>=0.1.0    # Bibliothèque pour des composants additionnels
+seaborn
+pandas
+numpy
+scikit-learn
+matplotlib
+plotly
