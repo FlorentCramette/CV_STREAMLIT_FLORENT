@@ -73,7 +73,9 @@ st.markdown("- Suppression des colonnes non pertinentes (ex: `taster_name`, `tas
             "- Encodage des variables catégoriques pour la modélisation.")
 
 st.write("Voici les valeurs manquantes par colonne après nettoyage :")
-st.write(df.isnull().sum())
+st.markdown('<div class="dataframe-container">', unsafe_allow_html=True)
+st.dataframe(df.isnull().sum().to_frame().T.style.set_table_attributes("style='display:inline'"))
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Suppression des valeurs nulles dans la colonne 'price'
 df = df.dropna(subset=['price'])
@@ -81,9 +83,9 @@ df = df.dropna(subset=['price'])
 # Affichage de la heatmap des valeurs nulles
 with st.container():
     st.subheader("🗺️ Carte des Valeurs Manquantes")
-    fig, ax = plt.subplots(figsize=(5, 3))
+    fig, ax = plt.subplots(figsize=(10, 5))
     sns.heatmap(df.isnull(), cbar=False, cmap="viridis", yticklabels=False)
-    ax.set_title("Carte des Valeurs Manquantes", fontsize=12)
+    ax.set_title("Carte des Valeurs Manquantes", fontsize=14)
     st.pyplot(fig)
 
 st.write("📌 Aperçu des données après nettoyage :")
