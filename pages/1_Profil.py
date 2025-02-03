@@ -68,15 +68,12 @@ if os.path.exists(cv_path):
     with open(cv_path, "rb") as file:
         cv_bytes = file.read()
 
-    # Centrer le bouton avec un div en HTML/CSS
-    st.markdown('<div style="text-align: center;">', unsafe_allow_html=True)
+    # Afficher un bouton de téléchargement avec Streamlit
     st.download_button(
         label="📄 Télécharger mon CV",
         data=cv_bytes,
         file_name="CV_Florent_Cramette.pdf",
         mime="application/pdf"
     )
-    st.markdown('</div>', unsafe_allow_html=True)
-    
 else:
     st.error("Le fichier CV_Florent_Cramette_Data_2025.pdf est introuvable. Vérifiez son emplacement.")
