@@ -61,15 +61,19 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Bouton centré pour télécharger le CV
-with open(os.path.join("assets", "CV_Florent_Cramette_Data_2025.pdf"), "rb") as pdf_file:
-    st.markdown(
-        """
-        <div class="center">
-            <a href="assets/CV_florent_cramette_data_analyste_2025.pdf" download="CV_Florent_Cramette.pdf" class="blue-button">
-                📄 Télécharger mon CV
-            </a>
-        </div>
-        """,
-        unsafe_allow_html=True,
+# Vérifier si le fichier CV existe
+cv_path = os.path.join("assets", "CV_Florent_Cramette_Data_2025.pdf")
+
+if os.path.exists(cv_path):
+    with open(cv_path, "rb") as file:
+        cv_bytes = file.read()
+
+    # Afficher un bouton de téléchargement avec Streamlit
+    st.download_button(
+        label="📄 Télécharger mon CV",
+        data=cv_bytes,
+        file_name="CV_Florent_Cramette.pdf",
+        mime="application/pdf"
     )
+else:
+    st.error("Le fichier CV_Florent_Cramette_Data_2025.pdf est introuvable. Vérifiez son emplacement.")
