@@ -31,19 +31,23 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Ajouter un bouton centré pour télécharger le programme de l'alternance
-with open(os.path.join("assets", "Programme_Data_IA_Engineer.pdf"), "rb") as file:
-    st.markdown(
-        """
-        <div class="center">
-            <a href="assets/Programme_Data_IA_Engineer.pdf" download="Programme_Data_IA_Engineer.pdf" class="blue-button">
-                📄 Télécharger le programme de l'alternance
-            </a>
-            <p> <p>
-        </div>
-        """,
-        unsafe_allow_html=True,
+# Ajouter un bouton de téléchargement pour le PDF
+pdf_path = os.path.join("assets", "Programme_Data_IA_Engineer.pdf")
+
+# Vérifier si le fichier existe
+if os.path.exists(pdf_path):
+    with open(pdf_path, "rb") as file:
+        pdf_bytes = file.read()
+
+    st.download_button(
+        label="📄 Télécharger le programme de l'alternance",
+        data=pdf_bytes,
+        file_name="Programme_Data_IA_Engineer.pdf",
+        mime="application/pdf"
     )
+else:
+    st.error("Le fichier Programme_Data_IA_Engineer.pdf est introuvable. Vérifiez le chemin.")
+
 
 # Afficher une image
 st.image(os.path.join("assets", "board_nom.JPG"), caption="Florent Cramette", use_container_width=True)
