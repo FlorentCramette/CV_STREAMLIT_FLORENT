@@ -62,7 +62,7 @@ st.markdown(
 )
 
 # Bouton centré pour télécharger le CV
-with open(os.path.join("assets", "CV_florent_cramette_data_analyste_2025.pdf"), "rb") as pdf_file:
+with open(os.path.join("assets", "CV_Florent_Cramette_Data_2025.pdf"), "rb") as pdf_file:
     st.markdown(
         """
         <div class="center">
