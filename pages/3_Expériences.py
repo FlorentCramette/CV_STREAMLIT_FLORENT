@@ -1,3 +1,4 @@
+
 import streamlit as st
 import os
 
@@ -13,12 +14,32 @@ def load_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+
 load_css(os.path.join("assets", "style.css"))
+
 
 # Contenu de la page
 st.markdown("<h1>Expériences professionnelles</h1>", unsafe_allow_html=True)
 
-# Liste des expériences professionnelles
+# Expérience actuelle chez Easi-Soft
+st.markdown(
+    """
+    <div class="section">
+        <h3>Consultant technico-fonctionnel Odoo</h3>
+        <p><strong>Entreprise :</strong> Easi-Soft</p>
+        <p><strong>Période :</strong> Mars 2025 - Octobre 2025 (CDD)</p>
+        <ul>
+            <li>Accompagnement des clients dans la mise en place et l’optimisation de la solution ERP Odoo.</li>
+            <li>Analyse des besoins métiers et rédaction des cahiers des charges fonctionnels.</li>
+            <li>Paramétrage, formation des utilisateurs et support technique.</li>
+            <li>Interface entre les équipes techniques et les utilisateurs finaux.</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Liste des expériences professionnelles précédentes
 st.markdown(
     """
     <div class="section">
