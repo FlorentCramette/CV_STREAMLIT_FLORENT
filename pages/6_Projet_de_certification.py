@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+import plotly.express as px
+import plotly.graph_objects as go
 import os
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -80,35 +80,59 @@ st.markdown('</div>', unsafe_allow_html=True)
 # Suppression des valeurs nulles dans la colonne 'price'
 df = df.dropna(subset=['price'])
 
-# Affichage de la heatmap des valeurs nulles
+
+# Affichage de la heatmap des valeurs nulles (Plotly)
 with st.container():
     st.subheader("🗺️ Carte des Valeurs Manquantes")
-    fig, ax = plt.subplots(figsize=(10, 5))
-    sns.heatmap(df.isnull(), cbar=False, cmap="viridis", yticklabels=False)
-    ax.set_title("Carte des Valeurs Manquantes", fontsize=14)
-    st.pyplot(fig)
+    nulls = df.isnull().astype(int)
+    fig_nulls = px.imshow(
+        nulls.T,
+        color_continuous_scale=[(0, '#f5f5f5'), (1, '#c56409')],
+        aspect='auto',
+        labels=dict(x="Index", y="Colonnes", color="Manquant"),
+        title="Carte des Valeurs Manquantes"
+    )
+    fig_nulls.update_layout(height=300, margin=dict(l=20, r=20, t=40, b=20))
+    st.plotly_chart(fig_nulls, use_container_width=True)
 
 st.write("📌 Aperçu des données après nettoyage :")
 st.write(df.head())
 
 ## **4️⃣ Visualisation des données**
+
 st.subheader("📊 Distribution des Prix du Vin")
 with st.container():
-    fig, ax = plt.subplots(figsize=(6, 3))
-    sns.histplot(df['price'], bins=50, kde=True, ax=ax)
-    ax.set_title("Répartition des prix des vins", fontsize=12)
-    ax.set_xlabel("Prix", fontsize=10)
-    ax.set_ylabel("Nombre", fontsize=10)
-    st.pyplot(fig)
+    fig_hist = px.histogram(
+        df, x='price', nbins=50, color_discrete_sequence=['#c56409'],
+        title="Répartition des prix des vins"
+    )
+    fig_hist.update_layout(
+        xaxis_title="Prix",
+        yaxis_title="Nombre",
+        height=300,
+        margin=dict(l=20, r=20, t=40, b=20),
+        plot_bgcolor='#222',
+        paper_bgcolor='#222',
+        font=dict(color='#fff')
+    )
+    st.plotly_chart(fig_hist, use_container_width=True)
 
-# Affichage du boxplot pour détecter les outliers
+
+# Boxplot interactif (Plotly)
 st.subheader("📌 Analyse des Prix et Outliers")
 with st.container():
-    fig, ax = plt.subplots(figsize=(6, 3))
-    sns.boxplot(x=df['price'], ax=ax)
-    ax.set_title("Boxplot des Prix des Vins", fontsize=12)
-    ax.set_xlabel("Prix", fontsize=10)
-    st.pyplot(fig)
+    fig_box = go.Figure()
+    fig_box.add_trace(go.Box(x=df['price'], boxpoints='outliers', marker_color='#c56409', line_color='#c56409'))
+    fig_box.update_layout(
+        title="Boxplot des Prix des Vins",
+        xaxis_title="Prix",
+        height=300,
+        margin=dict(l=20, r=20, t=40, b=20),
+        plot_bgcolor='#222',
+        paper_bgcolor='#222',
+        font=dict(color='#fff')
+    )
+    st.plotly_chart(fig_box, use_container_width=True)
 
 st.write("💡 Les prix du vin présentent une forte variabilité, mais les valeurs élevées ne doivent pas être considérées comme des outliers.")
 st.write("Il est courant d'avoir des bouteilles à prix très élevé en fonction de la région et de la rareté du vin.")
