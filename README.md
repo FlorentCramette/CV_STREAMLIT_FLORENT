@@ -1,6 +1,6 @@
 # CV Interactif - Florent Cramette
 
-🚀 **[Voir l'application en ligne](https://cvstreamlitflorent.streamlit.app/)**
+🚀 **[Voir l'application en ligne](https://cvflorentcramettedata.streamlit.app/)**
 
 ## 💡 Pourquoi ce CV interactif ?
 
