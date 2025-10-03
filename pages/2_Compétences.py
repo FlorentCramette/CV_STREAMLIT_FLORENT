@@ -29,6 +29,33 @@ st.markdown(
 # Contenu principal
 st.markdown("<h1>Mes Compétences</h1>", unsafe_allow_html=True)
 
+# Bouton de téléchargement du CV et lien démo
+col1, col2 = st.columns(2)
+with col1:
+    with open("assets/CV_Florent_Cramette_Data_Final.pdf", "rb") as pdf_file:
+        st.download_button(
+            label="📄 Télécharger mon CV",
+            data=pdf_file,
+            file_name="CV_Florent_Cramette_Data_Final.pdf",
+            mime="application/pdf"
+        )
+with col2:
+    st.markdown(
+        """
+        <a href="https://retailgeodatacase-jjdsfxbvgmdwn3n4yzh6pg.streamlit.app/" target="_blank" style="
+            display: inline-block;
+            background-color: #c56409;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        ">🌍 Démo Retail GeoData Case</a>
+        """,
+        unsafe_allow_html=True
+    )
+
 # Organisation des compétences
 soft_skills = [
     "Curieux et autodidacte",
@@ -43,15 +70,19 @@ soft_skills = [
 hard_skills = [
     "Extract, Transform, Load (ETL)",
     "Nettoyage et transformation des données",
-    "SQL, Python (Pandas, NumPy, Scikit-learn...)",
+    "SQL, Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)",
     "Power BI, Tableau (visualisation des données)",
     "Streamlit, Django (présentation web)",
     "Excel, VBA (TOSA niveau avancé)",
+    "Machine Learning (régression, classification)",
+    "Bases de données relationnelles (PostgreSQL, MySQL)",
+    "Git, GitHub (gestion de versions)",
     # Compétences Odoo
     "Odoo : paramétrage fonctionnel des modules (ventes, achats, stocks, CRM, facturation...)",
     "Odoo : analyse des besoins métiers et rédaction de cahiers des charges",
     "Odoo : formation et accompagnement des utilisateurs",
     "Odoo : support, tests et recette fonctionnelle",
+    "Odoo : gestion de projets d'implémentation ERP",
 ]
 
 # Affichage des listes l'une sous l'autre, pleine largeur

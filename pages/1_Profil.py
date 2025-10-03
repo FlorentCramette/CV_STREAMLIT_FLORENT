@@ -20,10 +20,10 @@ st.markdown(
     """
     <div class="section" style="text-align: left;">
         <h2 style='text-align: center;'>À propos de moi</h2>
-        <p style='text-align: center;'><strong>Consultant technico-fonctionnel & Data Analyst</strong></p>
-        <p>Passionné par la donnée et la transformation digitale, j’accompagne les entreprises dans l’optimisation de leurs processus grâce à l’ERP Odoo et à l’analyse de données.</p>
-        <p>Mon parcours mêle expertise métier, esprit d’analyse et sens du service. Découvrez mon expérience de consultant, mes compétences en BI et mon goût pour l’automatisation et la valorisation de l’information.</p>
-        <p>Envie d’un profil hybride, à la fois orienté métier et technique ? Échangeons !</p>
+        <p style='text-align: center;'><strong>Data Analyst certifié</strong></p>
+        <p>Data Analyst certifié, avec une expertise à la croisée de la donnée et du métier. Fort de 15+ ans d'expérience en retail, management et ERP (Odoo), j'ai acquis une compréhension approfondie des processus commerciaux et opérationnels.</p>
+        <p>Aujourd'hui, je mets mes compétences en SQL, Python et Power BI au service de la valorisation des données, en transformant les flux bruts en insights actionnables pour soutenir la performance et la prise de décision.</p>
+        <p>💡 Mon atout : associer vision métier (achats, stocks, ventes, logistique) et compétences techniques pour créer des solutions data pragmatiques et impactantes.</p>
         <div style="margin-top: 30px; display: flex; flex-direction: column; align-items: center;">
             <a href="https://github.com/FlorentCramette" target="_blank" style="margin-bottom: 18px;">
                 <img src="https://img.shields.io/badge/GitHub-Profil-blue?logo=github" alt="GitHub">
@@ -42,6 +42,3 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-
-

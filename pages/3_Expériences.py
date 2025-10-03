@@ -1,8 +1,21 @@
 
-import streamlit as st
-import os
-
-# Configure la page (doit être la première commande)
+import streamlit as st# Expérience actuelle chez Easi-Soft
+st.markdown(
+    """
+    <div class="section">
+        <h3>Consultant technico-fonctionnel Odoo</h3>
+        <p><strong>Entreprise :</strong> Easi Soft</p>
+        <p><strong>Période :</strong> 2025</p>
+        <ul>
+            <li>Amélioration de la qualité des données et reporting (SQL, Power BI)</li>
+            <li>Développement et paramétrage de solutions sur mesure (multi-sociétés)</li>
+            <li>Formation utilisateurs, rédaction de documentation et spécifications fonctionnelles</li>
+            <li>Support à la direction dans ses décisions grâce à des analyses chiffrées</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)figure la page (doit être la première commande)
 st.set_page_config(
     page_title="Expériences professionnelles",
     page_icon="📈",

@@ -1,27 +1,35 @@
 # CV Interactif - Florent Cramette
 
-Ce projet est une application Streamlit interactive permettant de présenter mon CV sous forme de pages dynamiques.
+🚀 **[Voir l'application en ligne](https://cvstreamlitflorent.streamlit.app/)**
 
-## Fonctionnalités
+## 💡 Pourquoi ce CV interactif ?
 
-- Navigation par sections : Profil, Compétences, Expériences, Formations, Centres d'intérêt.
-- Téléchargement de mon CV en format PDF.
-- Affichage de mes réalisations et centres d'intérêt via des images.
+En tant que **Data Analyst**, je crois fermement que les données prennent vie quand elles sont bien présentées. Ce CV interactif illustre concrètement mes compétences :
 
-### Prérequis
+✨ **Développement d'applications web** avec Streamlit pour rendre les données accessibles  
+📊 **Visualisations interactives** avec Plotly pour une meilleure compréhension  
+🚀 **Déploiement cloud** pour partager facilement mes analyses  
+🎨 **Interface utilisateur intuitive** pour une expérience optimale  
 
-- Python 3.8 ou supérieur
-- Git
-- Virtualenv (optionnel, recommandé)
+## 🎯 Ce que je peux créer pour votre entreprise
 
-#### Étapes
+- **Dashboards interactifs** pour piloter vos KPIs en temps réel
+- **Applications de visualisation** pour explorer vos données métier
+- **Outils de reporting automatisé** accessibles via navigateur web
+- **Prototypes rapides** pour tester vos idées data
 
-1. Clonez le dépôt :
-   ```bash
-   git clone https://github.com/FlorentCramette/CV_STREAMLIT_FLORENT.git
-   cd CV_STREAMLIT_FLORENT
-   
-##### Langages utilisés
-- Python
-- HTML
-- CSS
+## 🛠️ Stack technique de cette démo
+
+- **Frontend** : Streamlit, HTML/CSS personnalisé
+- **Visualisation** : Plotly pour des graphiques interactifs
+- **Backend** : Python (Pandas, NumPy)
+- **Déploiement** : Streamlit Cloud (gratuit et rapide)
+
+## 📊 Mes autres projets data
+
+- [Fresh BI - Dashboard Retail](https://github.com/FlorentCramette/retail-bi-poc) - Pipeline complet CSV → Python → Power BI
+- [Retail GeoData Case](https://github.com/FlorentCramette/retail_geodata_case) - [🔗 Démo live](https://retailgeodatacase-jjdsfxbvgmdwn3n4yzh6pg.streamlit.app/) - App géovisualisation avec PostgreSQL
+- [Multipli App](https://github.com/FlorentCramette/multipli_app) - Application mobile Flutter/Dart
+
+---
+*En quelques jours, je peux transformer vos données en application web interactive. Parlons de votre projet !* 💪
